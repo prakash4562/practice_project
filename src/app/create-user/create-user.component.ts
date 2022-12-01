@@ -23,11 +23,11 @@ export class CreateUserComponent {
 
   submitForm() {
     console.log(this.signUpForm.value);
-    this.utilService.createUser(this.signUpForm.value).subscribe((response: any) => {
-      console.log("Create user response: " + response);
-    }, error => {
-      this.messageService.displayErrorMessage(error.message);
-    })
+    // this.utilService.createUser(this.signUpForm.value).subscribe((response: any) => {
+    //   console.log("Create user response: " + response);
+    // }, error => {
+    //   this.messageService.displayErrorMessage(error.message);
+    // })
   }
 
   fetchUserDetails() {
